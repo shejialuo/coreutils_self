@@ -139,11 +139,9 @@ void commandLineParse(int argc, char* argv[]) {
         break;
       case ':':
         printf("options needs value");
-        break;
       case '?':
-      case 'h':
         printf("unkown option: %c\n", optopt);
-
+      case 'h':
         printf("Usage: who [OPTION]\n"
                "Print information about users who are currently logged in."
                "\n"
@@ -162,4 +160,6 @@ int main(int argc, char* argv[]) {
 
   processFile();
   commandLineParse(argc, argv);
+  exit(0);
+
 }
