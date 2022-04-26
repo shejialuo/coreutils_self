@@ -4,3 +4,4 @@ project(coreutils C)
 
 add_subdirectory(who)
 add_subdirectory(tail)
+add_subdirectory(head)
